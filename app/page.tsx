@@ -1,16 +1,20 @@
+"use client";
+
+import { AboutUs } from "@/components/about-us/AboutUs";
 import { LogoImage, WhatsappIcon } from "@/components/icons";
+import { License } from "@/components/license/License";
 import { title } from "@/components/primitives";
 import { Button } from "@heroui/button";
 import { ArrowNarrowRight } from "@untitled-ui/icons-react";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col h-screen">
       <section
-        id="intro"
-        className="home-background absolute top-0 left-0 w-screen h-screen z-0 flex flex-col justify-center"
+        id="home"
+        className="relative flex flex-col justify-center items-center h-screen home-background text-white"
       >
-        <div className="container mx-auto max-w-7xl px-6">
+        <div className="relative z-20 container mx-auto h-screen flex flex-col justify-center">
           <LogoImage />
           <div className="py-2">
             <span className={title()}>Streamline&nbsp;</span>
@@ -42,6 +46,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <AboutUs />
+
+      <License />
     </div>
   );
 }

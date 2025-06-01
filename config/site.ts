@@ -7,37 +7,37 @@ export const siteConfig = {
   navItems: [
     {
       label: "Home",
-      href: "/",
+      href: "#",
     },
     {
       label: "About us",
-      href: "/about-us",
+      href: "#about-us",
     },
     {
       label: "License",
-      href: "/license",
+      href: "#license",
     },
     {
       label: "Services",
-      href: "/services",
+      href: "#services",
     },
   ],
   navMenuItems: [
     {
       label: "Home",
-      href: "/",
+      href: "#",
     },
     {
       label: "About us",
-      href: "/about-us",
+      href: "#about-us",
     },
     {
       label: "License",
-      href: "/license",
+      href: "#license",
     },
     {
       label: "Services",
-      href: "/services",
+      href: "#services",
     },
   ],
   links: {

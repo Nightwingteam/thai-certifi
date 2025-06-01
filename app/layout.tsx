@@ -42,26 +42,24 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col h-screen">
-            <Navbar />
-            <main className="container flex-grow">{children}</main>
-            <footer className="w-full flex items-center justify-center py-3">
-              <Link
-                isExternal
-                className="flex items-center gap-1 px-2"
-                href="https://nightwingdigital.co/"
-                title="nightwingdigital.co homepage"
-              >
-                <span className="text-default-600">
-                  Copyright © 2025{" "}
-                  <span className="text-secondary">
-                    Nightwing Digital Solutions Co., Ltd.
-                  </span>{" "}
-                  All rights reserved.
-                </span>
-              </Link>
-            </footer>
-          </div>
+          <Navbar />
+          <main>{children}</main>
+          {/* <footer className="bottom-0 w-full flex items-center justify-center py-3">
+            <Link
+              isExternal
+              className="flex items-center gap-1 px-2"
+              href="https://nightwingdigital.co/"
+              title="nightwingdigital.co homepage"
+            >
+              <span className="text-default-600">
+                Copyright © 2025{" "}
+                <span className="text-secondary">
+                  Nightwing Digital Solutions Co., Ltd.
+                </span>{" "}
+                All rights reserved.
+              </span>
+            </Link>
+          </footer> */}
         </Providers>
       </body>
     </html>

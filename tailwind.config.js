@@ -20,6 +20,7 @@ const config = {
       themes: {
         dark: {
           colors: {
+            background: "#f7f8fc",
             primary: {
               DEFAULT: "#05224C",
               foreground: "#ECEEFB",
