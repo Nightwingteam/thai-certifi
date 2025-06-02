@@ -4,11 +4,8 @@ import Image from "next/image";
 import { Banner } from "./Banner";
 import { Hero } from "./Hero";
 import { InfoCard } from "./InfoCard";
-import { useBreakpoint } from "../useBreakpoint";
 
 export const AboutUs = () => {
-  const { lg } = useBreakpoint();
-
   return (
     <section
       id="about-us"
