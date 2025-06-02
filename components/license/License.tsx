@@ -92,7 +92,9 @@ export const License = () => {
                 <li>Brochure</li>
                 <li>Picture</li>
                 <li>User Manual</li>
-                <li>**Sign and stamp the company's seal on every document.</li>
+                <li>
+                  **Sign and stamp the company&#39;s seal on every document.
+                </li>
                 <li>Processing time: 1 week (excluding device testing time)</li>
               </ul>
             </div>

@@ -13,7 +13,7 @@ export const Heading = () => {
         <span className={title()}>in Thailand</span>
       </p>
       <p className="pt-2 lg:text-lg max-w-7xl">
-        Expanding your business to Thailand? Don't risk misunderstandings or
+        Expanding your business to Thailand? Don&#39;t risk misunderstandings or
         legal pitfalls. We specialize in <strong>website localization</strong>{" "}
         and <strong>marketing compliance </strong>
         tailored for foreigners entering the Thai market. From flawless Thai

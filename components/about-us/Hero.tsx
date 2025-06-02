@@ -22,7 +22,7 @@ export const Hero = () => {
       </div>
       <div className="flex text-center my-4 text-black text-[22px] mx-96">
         With a dedicated team of consultants, we offers coordinating and
-        consulting services as our client's partner to accelerate process to
+        consulting services as our client&#39;s partner to accelerate process to
         achieve their certificates.
       </div>
     </div>
