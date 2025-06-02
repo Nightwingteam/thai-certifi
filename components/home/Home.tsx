@@ -3,7 +3,9 @@
 import { LogoImage, WhatsappIcon } from "@/components/icons";
 import { title } from "@/components/primitives";
 import { Button } from "@heroui/button";
+import { Link } from "@heroui/link";
 import { ArrowNarrowRight } from "@untitled-ui/icons-react";
+import { ConsultButton } from "../ConsultButton";
 
 export const Home = () => {
   return (
@@ -24,19 +26,14 @@ export const Home = () => {
           <span className={title({ color: "secondary" })}>Thailand</span>
         </span>
 
-        <div className="flex mt-8 gap-4">
-          <Button
-            endContent={<ArrowNarrowRight />}
-            size="lg"
-            className="bg-secondary"
-          >
-            Free Consulting
-          </Button>
+        <div className="flex mt-8 gap-6">
+          <ConsultButton />
+
           <Button
             startContent={<WhatsappIcon />}
             size="lg"
             color="primary"
-            className="border border-white"
+            className="border border-white h-16"
           >
             Whatsapp
           </Button>

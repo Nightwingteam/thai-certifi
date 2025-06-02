@@ -23,7 +23,7 @@ body {
 }
 
 .building-background {
-  background: url("/building.webp");
+  background: url("/building.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

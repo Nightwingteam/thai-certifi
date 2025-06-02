@@ -2,6 +2,7 @@ import Image from "next/image";
 import { title } from "../primitives";
 import { Button } from "@heroui/button";
 import { ArrowNarrowRight } from "@untitled-ui/icons-react";
+import { ConsultButton } from "../ConsultButton";
 
 export const License = () => {
   return (
@@ -24,13 +25,7 @@ export const License = () => {
             </span>
           </div>
           <div className="flex justify-end">
-            <Button
-              className="bg-secondary"
-              size="lg"
-              endContent={<ArrowNarrowRight />}
-            >
-              <span className="text-white">Free Consulting</span>
-            </Button>
+            <ConsultButton />
           </div>
         </div>
 

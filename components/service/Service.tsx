@@ -10,6 +10,14 @@ export const Service = () => {
       id="service"
       className="pb-32 relative flex flex-col justify-center items-center text-black"
     >
+      <Image
+        src="/building.webp"
+        alt="Building"
+        width={1}
+        height={1}
+        priority
+        style={{ display: "none" }}
+      />
       <div className="building-background h-[140vh] w-screen" />
       <div className="absolute -top-20">
         <div className="bg-primary rounded-[88px] px-12 py-20 min-w-[1400px]">
