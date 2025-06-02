@@ -84,7 +84,7 @@ export const Navbar = () => {
                     ? "secondary"
                     : "foreground"
                 }
-                href="#"
+                href={item.href}
                 size="lg"
               >
                 {item.label}

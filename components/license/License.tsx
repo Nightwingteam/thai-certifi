@@ -1,18 +1,20 @@
 import Image from "next/image";
-import { title } from "../primitives";
-import { Button } from "@heroui/button";
-import { ArrowNarrowRight } from "@untitled-ui/icons-react";
 import { ConsultButton } from "../ConsultButton";
+import { title } from "../primitives";
+import { useBreakpoint } from "../useBreakpoint";
 
 export const License = () => {
+  const { lg } = useBreakpoint();
+
   return (
     <section
       id="license"
       className="pb-32 relative flex flex-col justify-center items-center text-black"
     >
-      <div className="mx-auto flex flex-col items-center gap-6">
-        <div className="grid grid-cols-2 items-center justify-between h-60">
-          <div className="flex flex-col gap-4 max-w-2xl">
+      {!lg && <ConsultButton />}
+      <div className="mx-auto flex flex-col items-center gap-6 mt-16 lg:mt-0">
+        <div className="lg:grid lg:grid-cols-2 items-center justify-between lg:h-60">
+          <div className="flex flex-col gap-4 lg:max-w-2xl px-12 lg:px-0">
             <p className="text-xl font-semibold">License Applications</p>
             <span
               className={title({
@@ -24,15 +26,23 @@ export const License = () => {
               SDoC, Class A/B/C, Trade License, Operator Code assistance.
             </span>
           </div>
-          <div className="flex justify-end">
-            <ConsultButton />
-          </div>
+
+          {lg && (
+            <div className="flex justify-end">
+              <ConsultButton />
+            </div>
+          )}
         </div>
 
-        <div className="flex">
+        <div className="flex flex-col lg:flex-row justify-center items-center">
           {" "}
-          <Image src="/doc.webp" alt="" width={600} height={600} />{" "}
-          <div className="flex flex-col gap-4">
+          <Image
+            src="/doc.webp"
+            alt=""
+            width={lg ? 600 : 400}
+            height={lg ? 600 : 400}
+          />{" "}
+          <div className="flex flex-col gap-4 mx-12 lg:mx-0">
             <p className="text-xl font-semibold">What is the NBTC?</p>
             <ul className="list-disc font-light">
               <li className="ml-4 my-2 text-xl/8">

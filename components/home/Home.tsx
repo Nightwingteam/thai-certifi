@@ -3,8 +3,6 @@
 import { LogoImage, WhatsappIcon } from "@/components/icons";
 import { title } from "@/components/primitives";
 import { Button } from "@heroui/button";
-import { Link } from "@heroui/link";
-import { ArrowNarrowRight } from "@untitled-ui/icons-react";
 import { ConsultButton } from "../ConsultButton";
 
 export const Home = () => {
@@ -13,7 +11,7 @@ export const Home = () => {
       id="home"
       className="relative flex flex-col justify-center items-center h-screen home-background text-white"
     >
-      <div className="relative z-20 container mx-auto h-screen flex flex-col justify-center">
+      <div className="relative z-20 container mx-auto h-screen flex flex-col justify-center text-center lg:text-start items-center lg:items-start">
         <LogoImage />
         <div className="py-2">
           <span className={title()}>Streamline&nbsp;</span>

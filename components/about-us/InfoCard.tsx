@@ -1,9 +1,22 @@
 import { Card } from "../Card";
 import { RunningRabbit, ThailandIcon, Woman } from "../icons";
+import { useBreakpoint } from "../useBreakpoint";
 
 export const InfoCard = () => {
+  const { lg } = useBreakpoint();
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-60 pt-16">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mx-10 lg:mx-60 -mt-[320px] lg:-mt-0 lg:pt-16">
+      {!lg && (
+        <div className="flex flex-col text-center justify-center text-white font-semibold">
+          <span>We are your trusted partner </span>
+          <span className="text-secondary">
+            <span className="text-white">for</span> NBTC Certification{" "}
+            <span className="text-white"> in Thailand</span>
+          </span>{" "}
+        </div>
+      )}
+
       {infoList.map((info, index) => (
         <Card color={index == 1 ? "secondary" : "default"} key={index}>
           <div className="flex flex-col text-center p-4 sm:p-6 justify-center items-center">
