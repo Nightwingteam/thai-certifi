@@ -41,6 +41,6 @@ export const siteConfig = {
     },
   ],
   links: {
-    contact: "/",
+    contact: "thaicertifi@gmail.com",
   },
 };

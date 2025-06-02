@@ -57,14 +57,11 @@ export const Navbar = () => {
 
         <NavbarItem className="hidden md:flex ml-8">
           <Button
-            isExternal
-            as={Link}
             className="text-xl font-normal border-secondary"
-            href={siteConfig.links.contact}
             endContent={<ArrowNarrowRight />}
             variant="bordered"
           >
-            Contact us
+            <a href="mailto:thaicertifi@gmail.com">Contact us</a>
           </Button>
         </NavbarItem>
       </NavbarContent>

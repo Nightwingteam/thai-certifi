@@ -19,7 +19,7 @@ export const SponserCardList = () => {
         </Card>
       ))}
 
-      <div className="w-[600px] h-[300px]" />
+      <div className="lg:w-[600px] h-[300px]" />
     </div>
   );
 };

@@ -11,7 +11,7 @@ export const Card = ({ children, number, variant = "solid" }: CardProps) => {
   return (
     <div
       className={clsx(
-        "flex-shrink-0 relative rounded-[44px] border border-white w-[200px] h-[200px]",
+        "flex-shrink-0 relative rounded-3xl lg:rounded-[44px] border border-white w-[100px] h-[160px] lg:w-[200px] lg:h-[200px]",
         {
           "bg-transparent text-white": variant == "outline",
           "bg-white text-black": variant == "solid",

@@ -10,7 +10,7 @@ export const Card = ({ children, icon }: CardProps) => {
   return (
     <div
       className={clsx(
-        "flex-shrink-0 relative bg-white/[52%] text-black rounded-2xl border border-white w-[600px] h-[250px]"
+        "flex-shrink-0 relative bg-white/[52%] text-black rounded-2xl border border-white w-[450px] h-[300px] lg:w-[600px] lg:h-[250px]"
       )}
     >
       <div className="absolute -top-6 left-6 z-10 w-16 h-16 bg-gradient-to-br from-[#FF96AB] to-secondary rounded-full">

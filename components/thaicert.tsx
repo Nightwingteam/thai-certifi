@@ -1,10 +1,13 @@
 import React from "react";
+import { useBreakpoint } from "./useBreakpoint";
 
 export const ThaicertLogo = () => {
+  const { lg } = useBreakpoint();
+
   return (
     <svg
-      width="220"
-      height="67"
+      width={lg ? "220" : "100"}
+      height={lg ? "67" : "30"}
       viewBox="0 0 220 67"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

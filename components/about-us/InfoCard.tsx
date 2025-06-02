@@ -25,20 +25,6 @@ export const InfoCard = () => {
             <h3 className="text-lg font-medium">{info.title}</h3>
 
             <p className="mt-2 text-sm/relaxed">{info.caption}</p>
-            {info.link && (
-              <a
-                href="#"
-                className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-secondary"
-              >
-                Read more
-                <span
-                  aria-hidden="true"
-                  className="block transition-all group-hover:ms-0.5 rtl:rotate-180"
-                >
-                  &rarr;
-                </span>
-              </a>
-            )}
           </div>
         </Card>
       ))}

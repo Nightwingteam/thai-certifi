@@ -1,15 +1,19 @@
+import { Link } from "@heroui/link";
 import { ArrowNarrowRight } from "@untitled-ui/icons-react";
 import React from "react";
 
 export const ConsultButton = () => {
   return (
-    <button className="flex items-center bg-white rounded-lg p-[0.5px] ">
+    <a
+      href="mailto:thaicertifi@gmail.com"
+      className="flex items-center bg-white rounded-lg p-[0.5px]"
+    >
       <div className="font-semibold text-white bg-secondary w-full flex justify-center py-2 px-4 items-center h-full text-center my-2 rounded-l-lg">
         Free Consulting
       </div>
       <div className="w-12 ml-2">
         <ArrowNarrowRight className="text-secondary" />
       </div>
-    </button>
+    </a>
   );
 };
