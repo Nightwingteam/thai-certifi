@@ -28,3 +28,18 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+.pattern-background {
+  background: url("/background-with-pattern.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
