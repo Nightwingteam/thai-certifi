@@ -19,7 +19,7 @@ export const InfoCard = () => {
 
       {infoList.map((info, index) => (
         <Card color={index == 1 ? "secondary" : "default"} key={index}>
-          <div className="flex flex-col text-center p-4 sm:p-6 justify-center items-center">
+          <div className="flex flex-col text-center p-4 justify-center items-center">
             <div className="p-3">{info.icon}</div>
 
             <h3 className="text-lg font-medium">{info.title}</h3>

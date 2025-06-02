@@ -5,12 +5,11 @@ import { title } from "../primitives";
 
 export const Hero = () => {
   return (
-    <div className="flex flex-col text-center justify-center">
-      <div className="flex flex-col text-center justify-center">
-        <span className={title({ weight: "semibold" })}>
-          We are your trusted partner{" "}
-        </span>
-      </div>
+    <div className="hidden lg:flex flex-col text-center justify-center">
+      <span className={title({ weight: "semibold" })}>
+        We are your trusted partner{" "}
+      </span>
+
       <div className="flex justify-center text-center pt-6">
         <span className={title({ weight: "semibold" })}>
           for{" "}

@@ -19,7 +19,7 @@ export const AboutUs = () => {
           <Image src="/thailand.webp" alt="" width={1000} height={400} />
         </div>
 
-        {lg && <Hero />}
+        <Hero />
 
         <InfoCard />
 
