@@ -22,8 +22,8 @@ body {
   background-position: center center;
 }
 
-.thailand-background {
-  background: url("/thailand.webp");
+.building-background {
+  background: url("/building.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
