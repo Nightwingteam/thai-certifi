@@ -11,10 +11,14 @@ export const License = () => {
       id="license"
       className="pb-32 relative flex flex-col justify-center items-center text-black"
     >
-      {!lg && <ConsultButton />}
       <div className="mx-auto flex flex-col items-center gap-6 mt-16 lg:mt-0">
-        <div className="lg:grid lg:grid-cols-2 items-center justify-between lg:h-60">
-          <div className="flex flex-col gap-4 lg:max-w-2xl px-12 lg:px-0">
+        <div className="lg:grid lg:grid-cols-2 items-center justify-between h-60">
+          <div className="md:mt-0 flex flex-col gap-4 lg:max-w-2xl px-12 lg:px-0">
+            {!lg && (
+              <div>
+                <ConsultButton />
+              </div>
+            )}
             <p className="text-xl font-semibold">License Applications</p>
             <span
               className={title({
@@ -34,7 +38,7 @@ export const License = () => {
           )}
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-center items-center">
+        <div className="md:mt-0 flex flex-col lg:flex-row justify-center items-center">
           {" "}
           <Image
             src="/doc.webp"

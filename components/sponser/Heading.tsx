@@ -5,14 +5,14 @@ import { Button } from "@heroui/button";
 
 export const Heading = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-screen px-4">
       <p>
         <span className={title({ color: "secondary" })}>
           Website Localization{" "}
         </span>
         <span className={title()}>in Thailand</span>
       </p>
-      <p className="pt-2 lg:text-lg max-w-7xl">
+      <p className="pt-2 text-sm lg:text-lg lg:max-w-7xl">
         Expanding your business to Thailand? Don&#39;t risk misunderstandings or
         legal pitfalls. We specialize in <strong>website localization</strong>{" "}
         and <strong>marketing compliance </strong>

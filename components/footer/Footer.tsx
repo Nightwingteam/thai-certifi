@@ -6,9 +6,11 @@ export const Footer = () => {
   return (
     <footer className="bg-primary flex flex-col h-96 w-full items-center justify-center py-3">
       <div className="flex flex-col justify-center items-center py-12">
-        <LogoImage />
+        <div className="mx-6">
+          <LogoImage />
+        </div>
         <div className="flex gap-3 items-center text-center">
-          <p className="text-lg lg:text-3xl mb-6">
+          <p className="text-sm md:text-lg lg:text-3xl mb-6">
             Have a project in mind?{" "}
             <i className="font-semibold text-secondary">Lets Discuss</i>
           </p>

@@ -23,11 +23,11 @@ export const Service = () => {
       />
       <div className="building-background h-[140vh] w-screen" />
       <div className="absolute -top-20">
-        <div className="bg-primary lg:rounded-[88px] px-12 py-20 lg:min-w-[1400px]">
-          <h1 className="text-white text-4xl flex items-center text-center justify-center pb-20">
+        <div className="bg-primary lg:rounded-[88px] w-full px-12 py-20 lg:min-w-[1400px]">
+          <h1 className="text-white text-xl md:text-4xl flex items-center text-center justify-center pb-20">
             Applications Work Process
           </h1>
-          <div className="text-xs lg:text-base relative flex items-center justify-between w-full mx-auto">
+          <div className="text-[9px] md:text-xs lg:text-base relative flex items-center md:justify-between md:mx-auto md:w-full justify-center w-screen">
             <Card number={1} variant="outline">
               <p>Submit your request</p>
               <ThaicertLogo />
@@ -51,7 +51,7 @@ export const Service = () => {
             </Card>
           </div>
 
-          <div className="text-xs lg:text-base relative flex items-center justify-center max-w-sm lg:max-w-4xl w-full mx-auto mt-20">
+          <div className="text-[9px] md:text-xs lg:text-base relative flex items-center justify-center max-w-sm lg:max-w-4xl w-full mx-auto mt-20">
             <Card number={5}>
               <p>We will review your request and contact you with details.</p>
             </Card>
@@ -75,7 +75,7 @@ export const Service = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center py-32">
-          <p className="text-3xl lg:text-[46px] leading-normal font-medium text-center text-white max-w-5xl">
+          <p className="px-12 max-w-screen-sm text-lg md:text-3xl lg:text-[46px] leading-normal font-medium text-center text-white  lg:max-w-5xl">
             Trusted by global manufacturers and distributors, we ensure your
             products meet NBTC standards swiftly saving you time, costs, and
             risks.

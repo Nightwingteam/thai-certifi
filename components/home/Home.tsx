@@ -5,15 +5,19 @@ import { title } from "@/components/primitives";
 import { Button } from "@heroui/button";
 import { ConsultButton } from "../ConsultButton";
 import { Link } from "@heroui/link";
+import { useBreakpoint } from "../useBreakpoint";
 
 export const Home = () => {
+  const { lg } = useBreakpoint();
   return (
     <section
       id="home"
       className="relative flex flex-col justify-center items-center h-screen home-background text-white"
     >
       <div className="lg:ml-60 relative z-20 container mx-auto h-screen flex flex-col justify-center text-center lg:text-start items-center lg:items-start">
-        <LogoImage />
+        <div className="mx-10 lg:mx-0">
+          <LogoImage />
+        </div>
         <div className="py-2">
           <span className={title()}>Streamline&nbsp;</span>
           <span className={title({ color: "secondary" })}>
@@ -25,7 +29,7 @@ export const Home = () => {
           <span className={title({ color: "secondary" })}>Thailand</span>
         </span>
 
-        <div className="flex mt-8 gap-6">
+        <div className="flex mt-8 gap-4 lg:gap-6">
           <ConsultButton />
 
           <Link
@@ -36,7 +40,7 @@ export const Home = () => {
           >
             <Button
               startContent={<WhatsappIcon />}
-              size="lg"
+              size={lg ? "lg" : "md"}
               color="primary"
               className="border border-white h-16"
             >

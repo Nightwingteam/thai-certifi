@@ -6,12 +6,12 @@ export const ConsultButton = () => {
   return (
     <a
       href="mailto:thaicertifi@gmail.com"
-      className="flex items-center bg-white rounded-lg p-[0.5px]"
+      className="flex h-16 items-center bg-white rounded-lg p-[0.5px]"
     >
-      <div className="font-semibold text-white bg-secondary w-full flex justify-center py-2 px-4 items-center h-full text-center my-2 rounded-l-lg">
+      <div className="text-xs font-semibold text-white bg-secondary w-full flex justify-center px-2 lg:py-2 lg:px-4 items-center h-full text-center my-2 rounded-l-lg">
         Free Consulting
       </div>
-      <div className="w-12 ml-2">
+      <div className="lg:w-12 ml-2">
         <ArrowNarrowRight className="text-secondary" />
       </div>
     </a>

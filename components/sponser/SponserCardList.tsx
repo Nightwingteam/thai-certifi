@@ -9,17 +9,19 @@ import { Card } from "./Card";
 
 export const SponserCardList = () => {
   return (
-    <div className="flex gap-4 relative pt-20">
+    <div className="flex gap-4 relative mt-24 lg:pt-20">
       {serviceList.map((service, index) => (
         <Card key={index} icon={service.icon}>
           <div className="flex flex-col text-start">
-            <p className="text-2xl font-semibold">{service.titile}</p>
-            <span className="text-start pt-2">{service.caption}</span>
+            <p className="lg:text-2xl font-semibold">{service.titile}</p>
+            <span className="text-xs md:text-base text-start pt-2">
+              {service.caption}
+            </span>
           </div>
         </Card>
       ))}
 
-      <div className="lg:w-[600px] h-[300px]" />
+      <div className="w-[200px] lg:w-[600px] h-[300px]" />
     </div>
   );
 };

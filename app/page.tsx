@@ -9,7 +9,7 @@ import { Sponser } from "@/components/sponser/Sponser";
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-screen w-screen overflow-x-hidden">
       <Home />
 
       <AboutUs />
