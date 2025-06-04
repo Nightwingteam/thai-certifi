@@ -23,11 +23,11 @@ export const Service = () => {
       />
       <div className="building-background h-[140vh] w-screen" />
       <div className="absolute -top-20">
-        <div className="bg-primary lg:rounded-[88px] w-full px-12 py-20 lg:min-w-[1400px]">
+        <div className="bg-primary md:rounded-[88px] w-full px-12 py-20 lg:min-w-[1400px]">
           <h1 className="text-white text-xl md:text-4xl flex items-center text-center justify-center pb-20">
             Applications Work Process
           </h1>
-          <div className="text-[9px] md:text-xs lg:text-base relative flex items-center md:justify-between md:mx-auto md:w-full justify-center w-screen">
+          <div className="text-[8px] md:text-xs lg:text-base relative flex items-center px-4 md:justify-between md:mx-auto md:w-full justify-center w-screen">
             <Card number={1} variant="outline">
               <p>Submit your request</p>
               <ThaicertLogo />
@@ -51,7 +51,7 @@ export const Service = () => {
             </Card>
           </div>
 
-          <div className="text-[9px] md:text-xs lg:text-base relative flex items-center justify-center max-w-sm lg:max-w-4xl w-full mx-auto mt-20">
+          <div className="text-[8px] px-4 md:text-xs lg:text-base relative flex items-center justify-center max-w-sm lg:max-w-4xl w-full mx-auto mt-20">
             <Card number={5}>
               <p>We will review your request and contact you with details.</p>
             </Card>
@@ -67,8 +67,8 @@ export const Service = () => {
               <Image
                 src="/kstc-sm.webp"
                 alt=""
-                width={lg ? 100 : 60}
-                height={100}
+                width={lg ? 100 : 30}
+                height={lg ? 100 : 30}
               />
               <p className="pt-2">Licensed by NBTC.</p>
             </Card>

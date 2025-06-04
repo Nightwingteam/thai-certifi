@@ -12,7 +12,15 @@ export const Footer = () => {
         <div className="flex gap-3 items-center text-center">
           <p className="text-sm md:text-lg lg:text-3xl mb-6">
             Have a project in mind?{" "}
-            <i className="font-semibold text-secondary">Lets Discuss</i>
+            <Link
+              isExternal
+              href="https://api.whatsapp.com/send/?phone=66642466403&text&type=phone_number&app_absent=0"
+              title="nightwingdigital.co homepage"
+            >
+              <i className="font-semibold text-sm md:text-lg lg:text-3xl text-secondary">
+                Lets Discuss
+              </i>
+            </Link>
           </p>
           <div className="mb-10">
             <WhatsappColoredImage />

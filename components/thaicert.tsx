@@ -6,8 +6,8 @@ export const ThaicertLogo = () => {
 
   return (
     <svg
-      width={lg ? "220" : "80"}
-      height={lg ? "67" : "30"}
+      width={lg ? "220" : "40"}
+      height={lg ? "67" : "20"}
       viewBox="0 0 220 67"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
