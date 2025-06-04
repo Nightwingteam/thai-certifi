@@ -9,7 +9,7 @@ export const AboutUs = () => {
   return (
     <section
       id="about-us"
-      className="pb-20 lg:pb-0 pt-32 relative w-screen flex-col justify-center items-center text-black"
+      className="pb-12 md:pb-0 pt-32 relative w-screen flex-col justify-center items-center text-black"
     >
       <div className="mx-auto flex flex-col justify-center">
         <div className="absolute -z-10 w-full h-full -left-32">
