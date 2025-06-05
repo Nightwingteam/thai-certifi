@@ -74,8 +74,8 @@ export const Service = () => {
             </Card>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center py-32">
-          <p className="px-12 max-w-screen-sm text-lg md:text-3xl lg:text-[46px] leading-normal font-medium text-center text-white  lg:max-w-5xl">
+        <div className="flex flex-col justify-center items-center py-20 2xl:py-32">
+          <p className="px-12 max-w-screen-sm text-lg md:text-3xl lg:text-4xl font-medium text-center text-white  lg:max-w-5xl">
             Trusted by global manufacturers and distributors, we ensure your
             products meet NBTC standards swiftly saving you time, costs, and
             risks.
