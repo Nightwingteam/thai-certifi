@@ -8,7 +8,7 @@ export const License = () => {
   return (
     <section
       id="license"
-      className="pb-32 relative flex flex-col justify-center items-center text-black"
+      className="pb-32 z-20 relative flex flex-col justify-center items-center text-black"
     >
       <div className="mx-auto flex flex-col items-center gap-6 mt-16 lg:mt-0">
         <div className="lg:grid lg:grid-cols-2 items-center justify-between lg:h-60">

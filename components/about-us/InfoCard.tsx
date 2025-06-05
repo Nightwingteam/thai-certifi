@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { Card } from "../Card";
 import { RunningRabbit, ThailandIcon, Woman } from "../icons";
 import { useBreakpoint } from "../useBreakpoint";
@@ -8,25 +9,39 @@ export const InfoCard = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mx-10 lg:mx-60 -mt-[320px] lg:-mt-0 lg:pt-16">
       {!lg && (
-        <div className="flex flex-col text-center justify-center text-white font-semibold">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+          className="flex flex-col text-center justify-center text-white font-semibold"
+        >
           <span>We are your trusted partner </span>
           <span className="text-secondary">
             <span className="text-white">for</span> NBTC Certification{" "}
             <span className="text-white"> in Thailand</span>
           </span>{" "}
-        </div>
+        </motion.div>
       )}
 
       {infoList.map((info, index) => (
-        <Card color={index == 1 ? "secondary" : "default"} key={index}>
-          <div className="flex flex-col text-center p-4 justify-center items-center">
-            <div className="p-3">{info.icon}</div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+          key={index}
+        >
+          <Card color={index == 1 ? "secondary" : "default"}>
+            <div className="flex flex-col text-center p-4 justify-center items-center">
+              <div className="p-3">{info.icon}</div>
 
-            <h3 className="text-lg font-medium">{info.title}</h3>
+              <h3 className="text-lg font-medium">{info.title}</h3>
 
-            <p className="mt-2 text-sm/relaxed">{info.caption}</p>
-          </div>
-        </Card>
+              <p className="mt-2 text-sm/relaxed">{info.caption}</p>
+            </div>
+          </Card>
+        </motion.div>
       ))}
     </div>
   );

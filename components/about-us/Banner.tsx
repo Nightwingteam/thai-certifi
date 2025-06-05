@@ -1,22 +1,44 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { title } from "../primitives";
 import { useBreakpoint } from "../useBreakpoint";
+import { motion } from "framer-motion";
 
 export const Banner = () => {
   const { lg } = useBreakpoint();
 
   return (
-    <section className="lg:grid lg:place-content-center h-screen pt-20">
-      <div className="mx-auto w-screen max-w-screen-xl flex flex-col lg:flex-row gap-20 px-4 py-16 sm:py-24 items-center lg:py-32">
-        <Image
-          src="/kstc.webp"
-          alt=""
-          width={lg ? 400 : 200}
-          height={lg ? 400 : 200}
-        />
+    <section className="lg:grid lg:place-content-center h-screen pt-20 overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+        className="mx-auto w-screen max-w-screen-xl flex flex-col lg:flex-row gap-20 px-4 py-16 sm:py-24 items-center lg:py-32"
+      >
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <Image
+            src="/kstc.webp"
+            alt=""
+            width={lg ? 400 : 200}
+            height={lg ? 400 : 200}
+          />
+        </motion.div>
 
-        <div className="text-left">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+          className="text-left"
+        >
           <div className="flex flex-col">
             <span className={title({ weight: "semibold" })}>
               We are your trusted partner{" "}
@@ -43,7 +65,13 @@ export const Banner = () => {
           </p>
 
           <div className="mt-4 -ml-8 lg:gap-6 flex sm:mt-6">
-            <article className="flex items-end justify-between rounded-lg p-2">
+            <motion.article
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.3 }}
+              className="flex items-end justify-between rounded-lg p-2"
+            >
               <div className="flex items-center gap-2">
                 <Image
                   src="/hand-star.webp"
@@ -60,9 +88,15 @@ export const Banner = () => {
                   <p className="text-lg font-medium">Year of Experience</p>
                 </div>
               </div>
-            </article>
+            </motion.article>
 
-            <article className="flex items-end justify-between rounded-lg p-2">
+            <motion.article
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.8, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.3 }}
+              className="flex items-end justify-between rounded-lg p-2"
+            >
               <div className="flex items-center gap-2">
                 <Image
                   src="/success.webp"
@@ -79,10 +113,10 @@ export const Banner = () => {
                   <p className="text-lg font-medium">Successful Client</p>
                 </div>
               </div>
-            </article>
+            </motion.article>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };

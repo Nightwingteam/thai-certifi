@@ -2,10 +2,17 @@
 
 import React from "react";
 import { title } from "../primitives";
+import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
-    <div className="hidden lg:flex flex-col text-center justify-center">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.3 }}
+      className="hidden lg:flex flex-col text-center justify-center"
+    >
       <span className={title({ weight: "semibold" })}>
         We are your trusted partner{" "}
       </span>
@@ -24,6 +31,6 @@ export const Hero = () => {
         consulting services as our client&#39;s partner to accelerate process to
         achieve their certificates.
       </div>
-    </div>
+    </motion.div>
   );
 };
