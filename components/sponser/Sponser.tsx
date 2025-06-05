@@ -12,7 +12,7 @@ export const Sponser = () => {
   const scrollLeft = () => {
     if (cardListRef.current) {
       cardListRef.current.scrollBy({
-        left: lg ? -500 : -450,
+        left: lg ? -600 : -450,
         behavior: "smooth",
       });
     }
@@ -21,7 +21,7 @@ export const Sponser = () => {
   const scrollRight = () => {
     if (cardListRef.current) {
       cardListRef.current.scrollBy({
-        left: lg ? 500 : 450,
+        left: lg ? 600 : 450,
         behavior: "smooth",
       });
     }
