@@ -35,7 +35,7 @@ export const Sponser = () => {
             <Heading />
           </div>
 
-          <div className="relative lg:mt-20 flex justify-center h-full">
+          <div className="relative mx-10 lg:mx-24 lg:mt-20 flex justify-center h-full">
             <div className="w-screen lg:max-w-[1220px] h-full">
               <div
                 ref={cardListRef}
@@ -46,7 +46,7 @@ export const Sponser = () => {
             </div>
           </div>
 
-          <div className="ml-16 md:ml-0 lg:ml-24 gap-8 flex justify-start lg:justify-start md:justify-between lg:gap-10 mt-6">
+          <div className="ml-16 lg:ml-24 gap-8 flex justify-start lg:gap-10 mt-6">
             <Button
               size="lg"
               isIconOnly
