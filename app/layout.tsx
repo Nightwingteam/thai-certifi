@@ -34,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="en">
+    <html suppressHydrationWarning lang="en" className="scroll-smooth" data-scroll-behavior="smooth">
       <head />
       <body
         className={clsx(
@@ -44,7 +44,7 @@ export default function RootLayout({
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <Navbar />
-          <main>{children}</main>
+          <main className="relative">{children}</main>
         </Providers>
       </body>
     </html>
