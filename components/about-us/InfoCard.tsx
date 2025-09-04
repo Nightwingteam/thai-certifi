@@ -37,7 +37,7 @@ export const InfoCard = () => {
           viewport={{ once: true, amount: 0.3 }}
           key={index}
         >
-          <div onClick={() => setSelectedService(info.id)} className="cursor-pointer">
+          <button onClick={() => setSelectedService(info.id)} className="cursor-pointer w-full text-left">
             <Card color={index == 1 ? "secondary" : "default"}>
               <div className="flex flex-col text-center p-4 justify-center items-center hover:scale-105 transition-transform duration-200">
                 <div className="p-3">{info.icon}</div>
@@ -49,7 +49,7 @@ export const InfoCard = () => {
                 <div className="mt-4 text-sm font-bold text-black bg-white/90 px-3 py-1 rounded-full border border-gray-300">Click for more details</div>
               </div>
             </Card>
-          </div>
+          </button>
         </motion.div>
       ))}
 
