@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import {
@@ -12,17 +14,21 @@ import {
 import { link as linkStyles } from "@heroui/theme";
 import clsx from "clsx";
 import NextLink from "next/link";
+import { useState } from "react";
 
 import { siteConfig } from "@/config/site";
 import { ArrowNarrowRight } from "@untitled-ui/icons-react";
 import { LogoIcon } from "./logo";
 
 export const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <HeroUINavbar
       maxWidth="xl"
       position="static"
       className="fixed py-2 bg-transparent backdrop-saturate-100 backdrop-blur-0 backdrop-filter-none"
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
     >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
@@ -61,7 +67,7 @@ export const Navbar = () => {
             endContent={<ArrowNarrowRight />}
             variant="bordered"
           >
-            <a href="mailto:thaicertifi@gmail.com">Contact us</a>
+            <a href="mailto:info@nightwingdigital.co">Contact us</a>
           </Button>
         </NavbarItem>
       </NavbarContent>
@@ -83,6 +89,7 @@ export const Navbar = () => {
                 }
                 href={item.href}
                 size="lg"
+                onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
               </Link>

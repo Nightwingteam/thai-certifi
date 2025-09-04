@@ -41,6 +41,6 @@ export const siteConfig = {
     },
   ],
   links: {
-    contact: "thaicertifi@gmail.com",
+    contact: "info@nightwingdigital.co",
   },
 };
