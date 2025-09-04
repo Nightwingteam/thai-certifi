@@ -46,7 +46,7 @@ export const InfoCard = () => {
 
                 <p className="mt-2 text-sm/relaxed">{info.caption}</p>
                 
-                <div className="mt-4 text-xs text-foreground/60">Click for more details</div>
+                <div className="mt-4 text-sm font-bold text-black bg-white/90 px-3 py-1 rounded-full border border-gray-300">Click for more details</div>
               </div>
             </Card>
           </div>
